@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Add Card Page</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="card-container">
+            <div class="card-background">
+                <img src="./imagens/bg-main-desktop.png" alt="" class="background">
+                <div class="back">
+                    <img src="./imagens/bg-card-back.png" alt="" class="back">
+                </div>
+                <div class="front">
+                    <img src="./imagens/bg-card-front.png" alt="" class="front">
+                </div>
+            </div>
+        </div>
+        <div class="card-details-container">
+            <div class="card-details-info">
+                <form action="">    
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" placeholder="e.g Jane Appleseed">
+                    <label for="cardnumber">Numero do cartão</label>
+                    <input type="text" name="cardnumber" id="cardnumber" placeholder="e.g 1234 5678 9123 0000">
+                    <div class="date-cvc">
+                       <div class="date">
+                            <label for="">exp.date (mm/yy)</label>
+                            <input type="number" placeholder="MM">
+                            <input type="number" placeholder="YY">
+                       </div>
+                        <div class="cvc">
+                            <label for="">cvc</label>
+                            <input type="number" placeholder="e.g 123">
+                        </div>
+                    </div>
+                    <input type="submit" value="confirmar">
+                </form>
+            </div>
+            <div class="card-details-submit">
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>

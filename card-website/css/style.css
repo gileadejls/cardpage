@@ -1,3 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Space+Grotesk:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
 
+@media screen and (max-width: 430px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+  }
+  .card-container {
+    width: 100%;
+    min-height: 300px;
+    height: 35vh;
+  }
+  .card-container .card-background {
+    width: 100%;
+    min-height: 250px;
+    height: 30vh;
+    position: relative;
+  }
+  .card-container .card-background .background {
+    min-height: 250px;
+    height: 30vh;
+    width: 100%;
+  }
+  .card-container .back, .card-container .front {
+    position: absolute;
+    min-width: 250px;
+    max-width: 300px;
+    width: 75%;
+  }
+  .card-container .back img, .card-container .front img {
+    width: 100%;
+  }
+  .card-container .back {
+    top: 15px;
+    right: 10px;
+  }
+  .card-container .front {
+    bottom: -20px;
+    left: 10px;
+  }
+  /* Card INFO */
+  .card-details-info {
+    padding: 50px 20px;
+  }
+  .card-details-info form {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-details-info form label {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  .card-details-info form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(206, 199, 199);
+    font-size: 17px;
+    outline-color: rgb(155, 122, 155);
+  }
+  .card-details-info form input[type=submit] {
+    background-color: rgb(47, 23, 63);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-transform: capitalizes;
+  }
+  .card-details-info form .date-cvc {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .card-details-info form .date-cvc .date input {
+    width: 47%;
+  }
+  .card-details-info form .date-cvc .cvc {
+    min-width: 50%;
+  }
+  .card-details-info form .date-cvc .cvc input {
+    width: 100%;
+  }
+  .card-details-info form .date-cvc label {
+    display: block;
+  }
+  .card-details-info form .date-cvc input {
+    width: 100px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
