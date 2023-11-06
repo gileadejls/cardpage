@@ -35,12 +35,12 @@
                     <input type="text" name="cardnumber" id="cardnumber" maxlength="19" placeholder="e.g 1234 5678 9123 0000" onkeypress=verify(event.key)  onkeyup=formatCard() required>
                     <div class="date-cvc">
                        <div class="date">
-                            <label for="">exp.date (mm/yy)</label>
+                            <label for="mmdate">exp.date (mm/yy)</label>
                             <input type="text" placeholder="MM" maxlength="2" id="mmdate" onkeyup=verifyDate() required>
                             <input type="text" placeholder="YY" maxlength="2" id="yydate" onkeyup=verifyYear() required>
                        </div>
                         <div class="cvc">
-                            <label for="">cvc</label>
+                            <label for="cvc">cvc</label>
                             <input type="text" placeholder="e.g 123" maxlength="3" id="cvc" onkeyup=verifyCVC() required>
                         </div>
                     </div>
