@@ -67,6 +67,3 @@ function verifyName(tecla){
 
 
 // test
-function test(){
-    alert("sss")
-}
