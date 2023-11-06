@@ -37,12 +37,39 @@
     width: 100%;
   }
   .card-container .back {
-    top: 15px;
-    right: 10px;
+    top: 40px;
+    right: 20px;
   }
   .card-container .front {
-    bottom: -20px;
-    left: 10px;
+    bottom: -50px;
+    left: 20px;
+  }
+  .card-container .front svg {
+    position: absolute;
+    top: 20px;
+  }
+  .card-container .front p:nth-child(2) {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    font-size: 5vw;
+    color: white;
+  }
+  .card-container .front p:nth-child(3) {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    font-size: 0.8rem;
+    color: white;
+    text-transform: uppercase;
+  }
+  .card-container .front p:nth-child(4) {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    font-size: 0.8rem;
+    color: white;
+    text-transform: uppercase;
   }
   /* Card INFO */
   .card-details-info {
