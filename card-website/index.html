@@ -12,13 +12,16 @@
             <div class="card-background">
                 <img src="./imagens/bg-main-desktop.png" alt="" class="background">
                 <div class="back">
+                    <p>000</p>
                     <img src="./imagens/bg-card-back.png" alt="">
                 </div>
                 <div class="front">
                     <svg width="84" height="47" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"></svg>
                     <p id="numbercard">0000 0000 0000 0000</p>
                     <p id="nametext" maxlength="10">Jane Appleseed</p>
-                    <p>00/00</p>
+                    <p id="datetext">00</p>
+                    <p>/</p>
+                    <p id="yeartext">00</p>
                     <img src="./imagens/bg-card-front.png" alt="">
                 </div>
             </div>
@@ -27,21 +30,21 @@
             <div class="card-details-info">
                 <form action="">    
                     <label for="name" >Nome</label>
-                    <input type="text" name="name" id="name" placeholder="e.g Jane Appleseed" maxlength="20">
+                    <input type="text" name="name" id="name" placeholder="e.g Jane Appleseed" maxlength="20" onkeyup=verifyName(event.key) required>
                     <label for="cardnumber">Numero do cartão</label>
-                    <input type="number" name="cardnumber" id="cardnumber" placeholder="e.g 1234 5678 9123 0000">
+                    <input type="text" name="cardnumber" id="cardnumber" maxlength="19" placeholder="e.g 1234 5678 9123 0000" onkeypress=verify(event.key)  onkeyup=formatCard() required>
                     <div class="date-cvc">
                        <div class="date">
                             <label for="">exp.date (mm/yy)</label>
-                            <input type="number" placeholder="MM">
-                            <input type="number" placeholder="YY">
+                            <input type="text" placeholder="MM" maxlength="2" id="mmdate" onkeyup=verifyDate() required>
+                            <input type="text" placeholder="YY" maxlength="2" id="yydate" onkeyup=verifyYear() required>
                        </div>
                         <div class="cvc">
                             <label for="">cvc</label>
-                            <input type="number" placeholder="e.g 123">
+                            <input type="text" placeholder="e.g 123" maxlength="3" id="cvc" onkeyup=verifyCVC() required>
                         </div>
                     </div>
-                    <input type="submit" value="confirmar">
+                    <input type="submit" value="confirmar" onclick=test()>
                 </form>
             </div>
             <div class="card-details-submit">
