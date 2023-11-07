@@ -6,7 +6,7 @@
   font-family: "Space Grotesk", sans-serif;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 630px) {
   .container {
     width: 100vw;
     height: 100vh;
@@ -57,7 +57,7 @@
     position: absolute;
     bottom: 50px;
     left: 20px;
-    font-size: 5vw;
+    font-size: min(3rem, 20px);
     color: white;
   }
   .card-container .front p:nth-child(3) {
@@ -135,6 +135,142 @@
   }
   .card-details-info form .date-cvc input {
     width: 100px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+  }
+  .container .card-container {
+    min-width: 40%;
+    height: 100%;
+    height: 100%;
+  }
+  .container .card-container .card-background {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .container .card-container .card-background .background {
+    width: 100%;
+    height: 100vh;
+  }
+  .container .card-container .card-background .front, .container .card-container .card-background .back {
+    position: absolute;
+    width: 100px;
+  }
+  .container .card-container .card-background .front img, .container .card-container .card-background .back img {
+    min-width: 200px;
+  }
+  .container .card-container .card-background .back {
+    bottom: 20%;
+    right: 130px;
+  }
+  .container .card-container .card-background .back p {
+    position: absolute;
+    top: 110px;
+    right: -280px;
+    font-size: 1.3rem;
+  }
+  .container .card-container .card-background .front {
+    top: 20%;
+    right: 230px;
+  }
+  .container .card-container .card-background .front p, .container .card-container .card-background .front svg {
+    position: absolute;
+  }
+  .container .card-container .card-background .front p:nth-child(2) {
+    width: 100%;
+    width: 400px;
+    left: 20px;
+    color: white;
+    top: 55%;
+    font-size: 2rem;
+  }
+  .container .card-container .card-background .front p:nth-child(3) {
+    color: white;
+    bottom: 30px;
+    left: 20px;
+    width: 300px;
+    text-transform: uppercase;
+  }
+  .container .card-container .card-background .front p:nth-child(4) {
+    color: white;
+    bottom: 30px;
+    right: -250px;
+    font-size: 1.2rem;
+  }
+  .container .card-container .card-background .front p:nth-child(5) {
+    color: white;
+    bottom: 30px;
+    right: -260px;
+    font-size: 1.2rem;
+  }
+  .container .card-container .card-background .front p:nth-child(6) {
+    color: white;
+    bottom: 30px;
+    right: -285px;
+    font-size: 1.2rem;
+  }
+  .container .card-container .card-background svg {
+    top: 30px;
+  }
+  .container .card-details-container {
+    width: 100%;
+    height: 100%;
+    margin-left: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .card-details-container .card-details-info {
+    width: 450px;
+    height: 500px;
+  }
+  .container .card-details-container .card-details-info input {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid rgb(148, 148, 148);
+    margin-bottom: 25px;
+    outline: none;
+  }
+  .container .card-details-container .card-details-info form {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+  }
+  .container .card-details-container .card-details-info form label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  .container .card-details-container .card-details-info form .date-cvc {
+    display: flex;
+    width: 100%;
+  }
+  .container .card-details-container .card-details-info form .date-cvc input {
+    margin-top: 10px;
+  }
+  .container .card-details-container .card-details-info form .date-cvc .date input {
+    width: 40%;
+  }
+  .container .card-details-container .card-details-info form .date-cvc .date input:nth-child(2) {
+    margin-right: 0px;
+  }
+  .container .card-details-container .card-details-info form .date-cvc .cvc {
+    min-width: 50%;
+  }
+  .container .card-details-container .card-details-info form .date-cvc .cvc input {
+    width: 100%;
+  }
+  .container .card-details-container .card-details-info form input[type=submit] {
+    background-color: rgb(30, 5, 58);
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.2rem;
   }
 }
 

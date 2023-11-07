@@ -8,7 +8,7 @@
 }
 
 
-@media screen and (max-width: 430px){
+@media screen and (max-width: 630px){
     .container{
         width: 100vw;
         height: 100vh;
@@ -72,7 +72,7 @@
             position: absolute;
             bottom: 50px;
             left: 20px;
-            font-size: 5vw;
+            font-size: min(max(3rem), 20px);
             color: white;
         }
         .front p:nth-child(3){
@@ -173,5 +173,179 @@
             }
         }
 
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+
+        overflow: hidden;
+
+
+        .card-container{
+            min-width: 40%;
+            height: 100%;
+            height: 100%;
+            .card-background{
+                width: 100%;
+                height: 100%;
+                position: relative;
+                .background{
+                    width: 100%;
+                    height: 100vh;
+                    
+                }
+
+
+                .front, .back{
+                    position: absolute;
+                    width: 100px;
+
+                    img{
+                        min-width: 200px;
+                    }
+                }
+                
+
+                .back{
+                    bottom: 20%;
+                    right: 130px;
+
+                    p{
+                        position: absolute;
+                        top: 110px;
+                        right: -280px;
+                        font-size: 1.3rem;
+                    }
+                }
+
+                .front{
+                    top: 20%;
+                    right: 230px;
+
+                    p, svg{
+                        position: absolute;
+                    }
+                }
+
+                .front p:nth-child(2){
+                    width: 100%;
+                    width: 400px;
+                    left: 20px;
+                    color: white;
+                    top: 55%;
+                    font-size: 2rem;
+                }
+
+                .front p:nth-child(3){
+                    color: white;
+                    bottom: 30px;
+                    left: 20px;
+                    width: 300px;
+                    text-transform: uppercase;
+                }
+
+                .front p:nth-child(4){
+                    color: white;
+                    bottom: 30px;
+                    right: -250px;
+                    font-size: 1.2rem;
+                }
+
+                .front p:nth-child(5){
+                    color: white;
+                    bottom: 30px;
+                    right: -260px;
+                    font-size: 1.2rem;
+                }
+
+                .front p:nth-child(6){
+                    color: white;
+                    bottom: 30px;
+                    right: -285px;
+                    font-size: 1.2rem;
+                }
+
+                svg{
+                    top: 30px;
+                }
+            }
+        }
+
+        // DETAILS DESKTOP
+        .card-details-container{
+            width: 100%;
+            height: 100%;
+            margin-left: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .card-details-info{
+                width: 450px;
+                height: 500px;
+                
+
+                input{
+                    padding: 12px;
+                    font-size: 1rem;
+                    border-radius: 10px;
+                    border: 1px solid rgb(148, 148, 148);
+                    margin-bottom: 25px;
+                    outline: none;
+
+                }
+
+                form{
+                    display: flex;
+                    height: 100%;
+                    flex-direction: column;
+                    
+    
+
+                    label{
+                        font-size: 1.2rem;
+                        margin-bottom: 10px;
+                    }
+
+                    .date-cvc{
+                        display: flex;
+                        width: 100%;
+
+                        input{
+                            margin-top: 10px;
+                        }
+                        .date{
+
+                            input{
+                                width: 40%;
+                            }
+                        }
+
+                        .date input:nth-child(2){
+                            margin-right: 0px;
+                        }
+                        .cvc{
+                            min-width: 50%;
+
+
+                            input{
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    input[type="submit"]{
+                        background-color: rgb(30, 5, 58);
+                        color: white;
+                        text-transform: capitalize;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
     }
 }
